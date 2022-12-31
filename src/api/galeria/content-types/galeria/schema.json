@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galerias",
+  "info": {
+    "singularName": "galeria",
+    "pluralName": "galerias",
+    "displayName": "Galeria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "autor": {
+      "type": "string"
+    },
+    "titulo_obra": {
+      "type": "string"
+    },
+    "foto_obra": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "academia",
+        "trabajos-personales",
+        "eventos"
+      ]
+    }
+  }
+}
